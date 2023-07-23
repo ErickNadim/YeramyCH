@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--Created by Ardora - www.webardora.net-->
+<!--ArdoraTartas-->
+<!--bajo licencia Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+para otros usos contacte con el autor-->
+<html lang="es">
+<head><meta charset="utf-8" /><title></title>
+<link type="text/css" href="Semana_23_resources/css/ardoraPies.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="Semana_23_resources/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="Semana_23_resources/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="Semana_23_resources/js/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+<div id="ardoraMain">
+<div id="ardoraEnu"></div>
+<div id="pieTitle">Las Frutas</div>
+<div id="ardoraAct">
+<div id="colorPanel">
+<table border="0">
+<tr><td width="25"></td><td></td>
+<td>%</td>
+</tr>
+<tr><td><span id="c0" class="bColor"></span></td><td><p id="p0">Platano</p></td>
+<td><select id="Por0">
+<option value="0">0</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+<option value="60">60</option>
+<option value="65">65</option>
+<option value="70">70</option>
+<option value="75">75</option>
+<option value="80">80</option>
+<option value="85">85</option>
+<option value="90">90</option>
+<option value="95">95</option>
+<option value="100">100</option>
+</select></td>
+</tr>
+<tr><td><span id="c1" class="bColor"></span></td><td><p id="p1">Manzana</p></td>
+<td><select id="Por1">
+<option value="0">0</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+<option value="60">60</option>
+<option value="65">65</option>
+<option value="70">70</option>
+<option value="75">75</option>
+<option value="80">80</option>
+<option value="85">85</option>
+<option value="90">90</option>
+<option value="95">95</option>
+<option value="100">100</option>
+</select></td>
+</tr>
+<tr><td><span id="c2" class="bColor"></span></td><td><p id="p2">Papaya</p></td>
+<td><select id="Por2">
+<option value="0">0</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+<option value="60">60</option>
+<option value="65">65</option>
+<option value="70">70</option>
+<option value="75">75</option>
+<option value="80">80</option>
+<option value="85">85</option>
+<option value="90">90</option>
+<option value="95">95</option>
+<option value="100">100</option>
+</select></td>
+</tr>
+<tr><td><span id="c3" class="bColor"></span></td><td><p id="p3">Mango</p></td>
+<td><select id="Por3">
+<option value="0">0</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+<option value="60">60</option>
+<option value="65">65</option>
+<option value="70">70</option>
+<option value="75">75</option>
+<option value="80">80</option>
+<option value="85">85</option>
+<option value="90">90</option>
+<option value="95">95</option>
+<option value="100">100</option>
+</select></td>
+</tr>
+<tr><td><span id="c4" class="bColor"></span></td><td><p id="p4">Mandarina</p></td>
+<td><select id="Por4">
+<option value="0">0</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+<option value="45">45</option>
+<option value="50">50</option>
+<option value="55">55</option>
+<option value="60">60</option>
+<option value="65">65</option>
+<option value="70">70</option>
+<option value="75">75</option>
+<option value="80">80</option>
+<option value="85">85</option>
+<option value="90">90</option>
+<option value="95">95</option>
+<option value="100">100</option>
+</select></td>
+</tr>
+</table>
+</div>
+<canvas aria-label="" id="ardoraCanvasPie" width="300" height="300"></canvas>
+<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+  </div>
+<div id="ardoraTab">
+  <div id="buttonOk"><canvas id="buttonOkCanvas" width="70" height="70"></canvas></div>
+</div></div>
+<div id="ardoraAlumSCORM"><p></p></div>
+</body>
+<script language="javascript" type="text/javascript" src="Semana_23_resources/js/ardoraPiesCFG.js"></script>
+<script language="javascript" type="text/javascript" src="Semana_23_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="Semana_23_resources/js/ardoraPies.js"></script>
+<script language="javascript" type="text/javascript" src="Semana_23_resources/js/ardoraTab.js"></script>
+</html>
